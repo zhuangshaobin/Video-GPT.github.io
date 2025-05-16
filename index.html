@@ -65,15 +65,15 @@
               <span class="author-block">
                 Zhipeng Huang</a><sup>5&dagger;</sup>,</span>
               <span class="author-block">
-                Ying Zhang</a><sup>2</sup>,</span>
+                <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=R_psgxkAAAAJ&view_op=list_works"></a>Ying Zhang</a><sup>2</sup>,</span>
               <span class="author-block">
-                Fangyikang Wang</a><sup>6&dagger;</sup>,</span>
+                <a href="https://github.com/zituitui"></a>Fangyikang Wang</a><sup>6&dagger;</sup>,</span>
               <span class="author-block">
                 Canmiao Fu</a><sup>2</sup>,</span>
               <span class="author-block">
                 Binxin Yang</a><sup>2</sup>,</span>
               <span class="author-block">
-                Chong Sun</a><sup>2</sup></span>
+                <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=-GLJ0D4AAAAJ&view_op=list_works&sortby=pubdate"></a>Chong Sun</a><sup>2</sup></span>
               <span class="author-block">
                 Chen Li</a><sup>2</sup>,</span>
               <span class="author-block">
@@ -116,7 +116,7 @@
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://github.com/zhuangshaobin/Vlogger"
+                  <a href="https://github.com/zhuangshaobin/Video-GPT"
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                         <i class="fab fa-github"></i>
@@ -143,7 +143,7 @@
         <!-- <h2 class="title is-3">Abstract</h2> -->
         <div class="content has-text-justified" style="font-size: 20.171px;">
           <p>
-            <strong>Abstract:</strong> In this work, we present Vlogger, a generic AI system for generating a minute-level video blog (i.e., vlog) of user descriptions. Different from short videos with a few seconds, vlog often contains a complex storyline with diversified scenes, which is challenging for most existing video generation approaches. To break through this bottleneck, our Vlogger smartly leverages Large Language Model (LLM) as Director and decomposes a long video generation task of vlog into four key stages, where we invoke various foundation models to play the critical roles of vlog professionals, including (1) Script, (2) Actor, (3) ShowMaker, and (4) Voicer. With such a design of mimicking human beings, our Vlogger can generate vlogs through explainable cooperation of top-down planning and bottom-up shooting. More over, we introduce a novel video diffusion model, ShowMaker, which serves as a videographer in our Vlogger for generating the video snippet of each shooting scene. By incorporating Script and Actor attentively as textual and visual prompts, it can effectively enhance spatial-temporal coherence in the snippet. Besides, we design a concise mixed training paradigm for ShowMaker, boosting its capacity for both T2V generation and prediction. Finally, the extensive experiments show that our method achieves state-of-the-art performance on zero-shot T2V generation and prediction tasks. More importantly, Vlogger can generate over 5-minute vlogs from open-world descriptions, without loss of video coherence on script and actor.
+            <strong>Abstract:</strong> GPT has shown its remarkable success in natural language processing. However, the language sequence is not sufficient to describe spatial-temporal details in the visual world. Alternatively, the video sequence is good at capturing such details. Motivated by this fact, we propose a concise Video-GPT in this paper by treating video as new language for visual world modeling. By analogy to next token prediction in GPT, we introduce a novel next clip diffusion paradigm for pretraining Video-GPT. Different from the previous works, this distinct paradigm allows Video-GPT to tackle both short-term generation and long-term prediction, by autoregressively denoising the noisy clip according to the clean clips in the history. Extensive experiments show our Video-GPT achieves the state-of-the-art performance on video prediction, which is the key factor towards world modeling (Physics-IQ Benchmark: Video-GPT 34.97 vs. Kling 23.64 vs. Wan 20.89). Moreover, it can be well adapted on 6 mainstream video tasks in both video generation and understanding, showing its great generalization capacity in downstream.
           </p>
         </div>
       </div>
