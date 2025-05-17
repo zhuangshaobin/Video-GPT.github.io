@@ -260,7 +260,7 @@
   <h3 class="title has-text-centered">Long video prediction</h3>
   <!-- ☆☆☆ 关键：三列一行，满 12 分自动换行 ☆☆☆ -->
   <!-- 新增 phys-shift 用来做定向位移 -->
-  <div class="columns is-multiline is-centered is-variable is-1">
+  <div class="columns is-multiline is-centered is-variable is-1 phys-shift_">
 
     <!-- item 1 -->
     <div class="column is-3 has-text-centered">
@@ -327,6 +327,29 @@
   }
 }
 </style>
+
+<style>
+  /* 基础位移：第 1、3 个向右；第 2、4 个向左 */
+  .phys-shift_ .column:nth-of-type(1),
+  .phys-shift_ .column:nth-of-type(3) {
+    transform: translateX(320px);   /* 右移 40px，可按需调整 */
+  }
+  
+  .phys-shift_ .column:nth-of-type(2),
+  .phys-shift_ .column:nth-of-type(4) {
+    transform: translateX(-320px);  /* 左移 40px，与上面保持一致即可 */
+  }
+  
+  /* 窄屏时自动回正，避免内容超出屏幕 */
+  @media (max-width: 768px) {
+    .phys-shift_ .column:nth-of-type(1),
+    .phys-shift_ .column:nth-of-type(2),
+    .phys-shift_ .column:nth-of-type(3),
+    .phys-shift_ .column:nth-of-type(4) {
+      transform: none;
+    }
+  }
+  </style>
 
 
 
