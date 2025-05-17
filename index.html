@@ -181,69 +181,60 @@
 
 
 
+<!-- Physical World Modeling -->
 <section class="section">
-  <style>
-    /* 自定义：缩小列内 padding，让视频更靠近 */
-    .video-grid.columns > .column {
-      padding-left: 0.5rem;   /* 原来是 0.75rem */
-      padding-right: 0.5rem;
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-    }
+  <h2 class="title has-text-centered">Physical World Modeling</h2>
+  <p class="subtitle is-6 has-text-centered">
+    The model makes future predictions based on a given conditional video, thereby examining the model's ability to model the physical world.
+  </p>
 
-    /* 让视频在各种屏宽下都能自适应（可删掉固定宽高） */
-    .video-grid video {
-      width: 100%;
-      height: auto;
-    }
-  </style>
-
-  <!-- ☆☆☆ 三列一行，自动换行；is-gapless 去掉 Bulma 间距 ☆☆☆ -->
-  <div class="columns is-multiline is-centered is-gapless video-grid">
+  <!-- ☆☆☆ 关键：三列一行，满 12 分自动换行 ☆☆☆ -->
+  <!-- 修改点：将 is-variable is-4 改为 is-variable is-1 以减少间距 -->
+  <div class="columns is-multiline is-centered is-variable is-1">
 
     <!-- item 1 -->
-    <div class="column is-narrow has-text-centered">
-      <video class="demo-video clickplay" controls>
+    <div class="column is-4 has-text-centered">
+      <video width="176" height="176" class="demo-video clickplay" controls>
         <source src="static/phys_bench/LVM/video1.mp4" type="video/mp4">
       </video>
       <p class="is-size-5 has-text-weight-bold">LVM</p>
     </div>
 
     <!-- item 2 -->
-    <div class="column is-narrow has-text-centered">
-      <video class="demo-video clickplay" controls>
+    <div class="column is-4 has-text-centered">
+      <video width="281.6" height="176" class="demo-video clickplay" controls>
         <source src="static/phys_bench/Seine/video1.mp4" type="video/mp4">
       </video>
       <p class="is-size-5 has-text-weight-bold">Seine</p>
     </div>
 
     <!-- item 3 -->
-    <div class="column is-narrow has-text-centered">
-      <video class="demo-video clickplay" controls>
+    <div class="column is-4 has-text-centered">
+      <video width="320" height="176" class="demo-video clickplay" controls>
         <source src="static/phys_bench/Video-GPT/video1.mp4" type="video/mp4">
       </video>
       <p class="is-size-5 has-text-weight-bold">Video-GPT</p>
     </div>
 
     <!-- item 4 -->
-    <div class="column is-narrow has-text-centered">
-      <video class="demo-video clickplay" controls>
+    <div class="column is-4 has-text-centered">
+      <video width="176" height="176" class="demo-video clickplay" controls>
         <source src="static/phys_bench/LVM/video2.mp4" type="video/mp4">
       </video>
       <p class="is-size-5 has-text-weight-bold">LVM</p>
     </div>
 
     <!-- item 5 -->
-    <div class="column is-narrow has-text-centered">
-      <video class="demo-video clickplay" controls>
+    <div class="column is-4 has-text-centered">
+      <video width="281.6" height="176" class="demo-video clickplay" controls>
         <source src="static/phys_bench/Seine/video2.mp4" type="video/mp4">
       </video>
       <p class="is-size-5 has-text-weight-bold">Seine</p>
     </div>
 
     <!-- item 6 -->
-    <div class="column is-narrow has-text-centered">
-      <video class="demo-video clickplay" controls>
+    <div class="column is-4 has-text-centered">
+      <video width="320" height="176" class="demo-video clickplay" controls>
         <source src="static/phys_bench/Video-GPT/video2.mp4" type="video/mp4">
       </video>
       <p class="is-size-5 has-text-weight-bold">Video-GPT</p>
