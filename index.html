@@ -186,14 +186,10 @@
     <div class="columns is-centered has-text-centered">
       <div class="container is-max-maxwidth">
 
-        <h2 class="title is-3">Comparison with State-of-the-art</h2>
+        <h2 class="title is-3">Physical World Modeling</h2>
         <p style="text-align: justify;">
-          <strong>Story:</strong> Lots of traffic in futuristic city. An alien spaceship arrives to the futuristic city. The camera gets inside the alien spaceship. The camera moves forward until showing an astronaut in the blue room. The astronaut is typing in the keyboard. The camera moves away from the astronaut. The astronaut leaves the keyboard and walks to the left. The astronaut leaves the keyboard and walks away. The camera moves beyond the astronaut and looks at the screen. The screen behind the astronaut displays fish swimming in the sea. Crash zoom into the blue fish. We follow the blue fish as it swims in the dark ocean. The camera points up to the sky through the water. The ocean and the coastline of a futuristic city. Crash zoom towards a futuristic skyscraper. The camera zooms into one of the many windows. We are in an office room with empty desks. A lion runs on top of the office desks. The camera zooms into the lion's face, inside the office. Zoom out to the lion wearing a dark suit in an office room. The lion wearing looks at the camera and smiles. The camera zooms out slowly to the skyscraper exterior. Timelapse of sunset in the modern city. (Story from <span style="color:rgb(147, 147, 229);"><a href="https://phenaki.github.io/">Phenaki.github.io</a></span>)
+          The model makes future predictions based on a given conditional video, thereby examining the model's ability to model the physical world.
         </p>
-        <!-- <p>
-          (Story from <span style="color:rgb(147, 147, 229);"><a href="https://phenaki.github.io/">Phenaki.github.io</a></span>)
-        </p> -->
-        <!-- <h2 class="title is-5">(Story from <span style="color:rgb(147, 147, 229);"><a href="https://phenaki.github.io/">Phenaki.github.io</a></span>) -->
         </h2>
 
 
@@ -204,10 +200,10 @@
               <!-- 1 column-->
 
                 <video width="256" height="256" controls class="clickplay" style="border-radius: 10px; margin-right: 0px;">
-                  <source src="static/Comparision/Phenaki.mp4" type="video/mp4">
+                  <source src="static/phys_bench/LVM/video1.mp4" type="video/mp4">
                 </video> 
                 <div class="content" style="font-family: Arial; margin-right: 0px; font-size: 25px; font-weight: bold; margin-top: 30px;">
-                  Phenaki
+                  LVM
                 </div>
           </div>
           
@@ -218,11 +214,23 @@
               <!-- 1 column-->
 
                 <video width="512" height="320" controls class="clickplay" style="border-radius: 10px; margin-right: 100px;">
-                  <source src="https://github.com/zhuangshaobin/Vlogger.github.io/releases/download/Vlogger_vs_Phenaki/Vlogger.mp4" type="video/mp4">
+                  <source src="static/phys_bench/Seine/video1.mp4" type="video/mp4">
                 </video> 
                 <div class="content" style="font-family: Arial; font-size: 25px; font-weight: bold;">
-                  Vlogger
+                  Seine
                 </div>
+          </div>
+
+          <div class="column is-5">
+
+            <!-- 1 column-->
+
+              <video width="320" height="176" controls class="clickplay" style="border-radius: 10px; margin-right: 100px;">
+                <source src="static/phys_bench/Video-GPT/video1.mp4" type="video/mp4">
+              </video> 
+              <div class="content" style="font-family: Arial; font-size: 25px; font-weight: bold;">
+                Seine
+              </div>
           </div>
 
         </div>
